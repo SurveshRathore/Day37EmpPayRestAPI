@@ -1,4 +1,12 @@
-public class UC1RetrieveEMP
+using System.Net;
+using Newtonsoft.Json;
+using System;
+using RestSharp;
+using System.Collections.Generic;
+
+namespace EmployeePayrollJson
+{
+  public class UC1RetrieveEMP
     {
         RestClient restClient = new RestClient("http://localhost:4000");
 
@@ -33,3 +41,4 @@ public class UC1RetrieveEMP
             }
         }
     }
+}
